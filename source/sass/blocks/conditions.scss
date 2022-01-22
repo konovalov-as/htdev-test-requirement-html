@@ -1,0 +1,91 @@
+.conditions {
+	&--offset {
+		margin-bottom: 99px;
+
+		@include vp--699 {
+			margin-bottom: 54px;
+		}
+	}
+}
+
+.conditions__slides {
+	position: relative;
+}
+
+.conditions__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 60px;
+
+	@include vp--699 {
+		margin-left: 20px;
+	}
+}
+
+.conditions__item {
+	padding-top: 44px;
+	padding-bottom: 52px;
+	padding-left: 49px;
+	padding-right: 119px;
+	background-color: $color-default-white;
+
+	@include vp--699 {
+		padding-top: 33px;
+		padding-bottom: 42px;
+		padding-left: 20px;
+		padding-right: 35px;
+	}
+}
+
+.conditions__title {
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+	line-height: 26px;
+	color: $color-nero;
+	margin-top: 0;
+	margin-bottom: 33px;
+
+	&::after {
+		content: "";
+		width: 100%;
+		height: 8px;
+		background-image: url("../img/svg/divider.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-top: 11px;
+
+		@include vp--699 {
+			margin-top: 9px;
+			background-position: 0 0;
+		}
+	}
+
+	@include vp--699 {
+		max-width: 235px;
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 16px;
+	}
+}
+
+.conditions__desc {
+	font-size: 16px;
+	line-height: 24px;
+	color: $color-nero;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	@include vp--699 {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
+.conditions__nav {
+	position: absolute;
+	top: 39px;
+	right: 60px;
+	z-index: 10;
+}

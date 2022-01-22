@@ -1,0 +1,234 @@
+extends ../base/layout
+
+block variables
+	- const title = "Главная страница компании Интеко"
+
+block main
+
+	main.container
+		.bg-page
+			h1.visually-hidden Сайт компания Интеко
+			section.hero.hero--offset
+				.hero__column-1
+					h2.title-h2 Кто мы
+					p.hero__description &laquo;ИНТЕКО&raquo;&nbsp;&mdash; прогрессивный девелопер с&nbsp;государственным участием.
+					p.hero__description Компания активно участвует в развитии городов: возводит современные жилые комплексы и социально значимые объекты, создает комфортные общественные пространства, формируя новые точки притяжения и современную среду для комфортной жизни.
+					p.hero__description Компания включена в перечень системообразующих организаций строительной отрасли. Президент компании – Александр Николаев является членом Общественного совета при Минстрое РФ.
+				.hero__image
+					picture
+						source(type="image/webp" media="(max-width: 699px)" srcset="img/content/hero-mobile@1x.webp 1x, img/content/hero-mobile@2x.webp 2x")
+						source(type="image/webp" srcset="img/content/hero-desc@1x.webp 1x, img/content/hero-desc@2x.webp 2x")
+						source(media="(max-width: 699px)" srcset="img/content/hero-mobile@1x.jpg, img/content/hero-mobile@2x.jpg 2x")
+						img(src="img/content/hero-desc@1x.jpg" srcset="img/content/hero-desc@2x.jpg 2x" alt="Офис компании Интеко" loading="lazy" width="920" height="570")
+
+			section.projects.projects--offset
+				.projects__inner-1
+					h2.title-h2 Наши проекты
+					p.projects__achievement За 19 лет на рынке недвижимости компания реализовала более 80 проектов в Москве, Ростове-на-Дону, Санкт-Петербурге и Ленинградской области и построила более 5 млн кв. м.
+				.projects__inner-2.swiper.js-slider-projects
+					ul.projects__list.swiper-wrapper
+						li.projects__item.swiper-slide
+							picture
+								source(type="image/webp" media="(max-width: 699px)" srcset="img/content/project-1-mobile@1x.webp 1x, img/content/project-1-mobile@2x.webp 2x")
+								source(type="image/webp" srcset="img/content/project-1-desc@1x.webp 1x, img/content/project-1-desc@2x.webp 2x")
+								source(media="(max-width: 699px)" srcset="img/content/project-1-mobile@1x.jpg, img/content/project-1-mobile@2x.jpg 2x")
+								img(src="img/content/project-1-desc@1x.jpg" srcset="img/content/project-1-desc@2x.jpg 2x" alt="Проект компании Интеко" loading="lazy" width="920" height="554")
+						li.projects__item.swiper-slide
+							picture
+								source(type="image/webp" media="(max-width: 699px)" srcset="img/content/project-2-mobile@1x.webp 1x, img/content/project-2-mobile@2x.webp 2x")
+								source(type="image/webp" srcset="img/content/project-2-desc@1x.webp 1x, img/content/project-2-desc@2x.webp 2x")
+								source(media="(max-width: 699px)" srcset="img/content/project-2-mobile@1x.jpg, img/content/project-2-mobile@2x.jpg 2x")
+								img(src="img/content/project-2-desc@1x.jpg" srcset="img/content/project-2-desc@2x.jpg 2x" alt="Проект компании Интеко" loading="lazy" width="920" height="554")
+						li.projects__item.swiper-slide
+							picture
+								source(type="image/webp" media="(max-width: 699px)" srcset="img/content/project-3-mobile@1x.webp 1x, img/content/project-3-mobile@2x.webp 2x")
+								source(type="image/webp" srcset="img/content/project-3-desc@1x.webp 1x, img/content/project-3-desc@2x.webp 2x")
+								source(media="(max-width: 699px)" srcset="img/content/project-3-mobile@1x.jpg, img/content/project-3-mobile@2x.jpg 2x")
+								img(src="img/content/project-3-desc@1x.jpg" srcset="img/content/project-3-desc@2x.jpg 2x" alt="Проект компании Интеко" loading="lazy" width="920" height="554")
+						li.projects__item.swiper-slide
+							picture
+								source(type="image/webp" media="(max-width: 699px)" srcset="img/content/project-4-mobile@1x.webp 1x, img/content/project-4-mobile@2x.webp 2x")
+								source(type="image/webp" srcset="img/content/project-4-desc@1x.webp 1x, img/content/project-4-desc@2x.webp 2x")
+								source(media="(max-width: 699px)" srcset="img/content/project-4-mobile@1x.jpg, img/content/project-4-mobile@2x.jpg 2x")
+								img(src="img/content/project-4-desc@1x.jpg" srcset="img/content/project-4-desc@2x.jpg 2x" alt="Проект компании Интеко" loading="lazy" width="920" height="554")
+						li.projects__item.swiper-slide
+							picture
+								source(type="image/webp" media="(max-width: 699px)" srcset="img/content/project-5-mobile@1x.webp 1x, img/content/project-5-mobile@2x.webp 2x")
+								source(type="image/webp" srcset="img/content/project-5-desc@1x.webp 1x, img/content/project-5-desc@2x.webp 2x")
+								source(media="(max-width: 699px)" srcset="img/content/project-5-mobile@1x.jpg, img/content/project-5-mobile@2x.jpg 2x")
+								img(src="img/content/project-5-desc@1x.jpg" srcset="img/content/project-5-desc@2x.jpg 2x" alt="Проект компании Интеко" loading="lazy" width="920" height="554")
+						li.projects__item.swiper-slide
+							picture
+								source(type="image/webp" media="(max-width: 699px)" srcset="img/content/project-6-mobile@1x.webp 1x, img/content/project-6-mobile@2x.webp 2x")
+								source(type="image/webp" srcset="img/content/project-6-desc@1x.webp 1x, img/content/project-6-desc@2x.webp 2x")
+								source(media="(max-width: 699px)" srcset="img/content/project-6-mobile@1x.jpg, img/content/project-6-mobile@2x.jpg 2x")
+								img(src="img/content/project-6-desc@1x.jpg" srcset="img/content/project-6-desc@2x.jpg 2x" alt="Проект компании Интеко" loading="lazy" width="920" height="554")
+						li.projects__item.swiper-slide
+							picture
+								source(type="image/webp" media="(max-width: 699px)" srcset="img/content/project-7-mobile@1x.webp 1x, img/content/project-7-mobile@2x.webp 2x")
+								source(type="image/webp" srcset="img/content/project-7-desc@1x.webp 1x, img/content/project-7-desc@2x.webp 2x")
+								source(media="(max-width: 699px)" srcset="img/content/project-7-mobile@1x.jpg, img/content/project-7-mobile@2x.jpg 2x")
+								img(src="img/content/project-7-desc@1x.jpg" srcset="img/content/project-7-desc@2x.jpg 2x" alt="Проект компании Интеко" loading="lazy" width="920" height="554")
+						li.projects__item.swiper-slide
+							picture
+								source(type="image/webp" media="(max-width: 699px)" srcset="img/content/project-8-mobile@1x.webp 1x, img/content/project-8-mobile@2x.webp 2x")
+								source(type="image/webp" srcset="img/content/project-8-desc@1x.webp 1x, img/content/project-8-desc@2x.webp 2x")
+								source(media="(max-width: 699px)" srcset="img/content/project-8-mobile@1x.jpg, img/content/project-8-mobile@2x.jpg 2x")
+								img(src="img/content/project-8-desc@1x.jpg" srcset="img/content/project-8-desc@2x.jpg 2x" alt="Проект компании Интеко" loading="lazy" width="920" height="554")
+						li.projects__item.swiper-slide
+							picture
+								source(type="image/webp" media="(max-width: 699px)" srcset="img/content/project-9-mobile@1x.webp 1x, img/content/project-9-mobile@2x.webp 2x")
+								source(type="image/webp" srcset="img/content/project-9-desc@1x.webp 1x, img/content/project-9-desc@2x.webp 2x")
+								source(media="(max-width: 699px)" srcset="img/content/project-9-mobile@1x.jpg, img/content/project-9-mobile@2x.jpg 2x")
+								img(src="img/content/project-9-desc@1x.jpg" srcset="img/content/project-9-desc@2x.jpg 2x" alt="Проект компании Интеко" loading="lazy" width="920" height="554")
+
+					.projects__text-block
+						p.projects__title Среди знаковых проектов:
+						p.projects__description Легендарный элитный комплекс в&nbsp;Хамовниках &laquo;Садовые кварталы&raquo;, ЖК&nbsp;бизнес-класса &laquo;West Garden&raquo;, ЖК&nbsp;комфорт-класса &laquo;Вестердам&raquo;, ЖК&nbsp;&laquo;Шуваловский&raquo;, ЖК&nbsp;&laquo;DOMINION&raquo;, ЖК&nbsp;&laquo;Гранд-паркъ&raquo;, Здания МГУ имени М.&nbsp;В.&nbsp;Ломоносова, Авторский дом #[br] премиум-класса на&nbsp;Врубеля, 4, Элитный комплекс апартаментов Balchug Residence, элитный комплекс апарт-резиденций Balchug Viewpoint.
+					.projects__nav.slider-nav
+						button(type="button" aria-label="Следующий слайд").slider-nav__button.slider-nav__button--next.js-slider-projects-next
+							+icon("icon-arrow", 22, 6)
+						button(type="button" aria-label="Предыдущий слайд").slider-nav__button.slider-nav__button--prev.js-slider-projects-prev
+							+icon("icon-arrow", 22, 6)
+				.projects__inner-3
+					p.projects__description.projects__description--decor Из&nbsp;года в&nbsp;год проекты &laquo;ИНТЕКО&raquo; побеждают в&nbsp;престижных российских и&nbsp;международных отраслевых премиях, что подтверждает признание профессионального сообщества и&nbsp;любовь наших клиентов. Компания стала обладателям уже более 35&nbsp;наград и&nbsp;продолжает запускать новые яркие проекты на&nbsp;рынке недвижимости.
+
+			section.company.company--offset
+				.company__inner
+					h2.title-h2 Интеко сейчас
+					.company__indicators
+						p.company__indicators-desc.company__indicators-desc--size Центральный офис &laquo;ИНТЕКО&raquo; расположен в&nbsp;Москве, #[br] также у&nbsp;компании есть представительства в&nbsp;Ростове-на-Дону и&nbsp;Санкт-Петербурге. На&nbsp;данный момент &laquo;ИНТЕКО&raquo; находится в&nbsp;стадии реализации стратегической программы трансформации:
+						ul.company__indicators-list
+							li.company__indicators-item Более #[br] #[span.company__indicators-value 2000] человек
+								p.company__indicators-desc.company__indicators-desc--value Общая численность персонала
+							li.company__indicators-item Около #[br] #[span.company__indicators-value 1,2] млн кв. м.
+								p.company__indicators-desc.company__indicators-desc--value Объем текущего строительства
+				.company__achievement.achievement
+					ul.company__achievement-list.achievement__list
+						li.achievement__item В 2019 г. состоялся ребрендинг
+						li.achievement__item Компания одной из первых в России перешла на работу по новым правилам строительной отрасли, предполагающей использование эскроу-счетов
+						li.achievement__item Происходит комплексная цифровизация бизнес-процессов
+						li.achievement__item Запускаются новые масштабные девелоперские проекты
+						li.achievement__item Компания реализует нестандартные имиджевые проекты, поддерживает творчество современных российских художников по созданию крупных уличных скульптур
+					.company__achievement-image
+						picture
+							source(type="image/webp" media="(max-width: 699px)" srcset="img/content/company-mobile@1x.webp 1x, img/content/company-mobile@2x.webp 2x")
+							source(type="image/webp" srcset="img/content/company-desc@1x.webp 1x, img/content/company-desc@2x.webp 2x")
+							source(media="(max-width: 699px)" srcset="img/content/company-mobile@1x.jpg, img/content/company-mobile@2x.jpg 2x")
+							img(src="img/content/company-desc@1x.jpg" srcset="img/content/company-desc@2x.jpg 2x" alt="Презентация достижений компании Интеко" loading="lazy" width="920" height="570")
+
+			section.conditions.conditions--offset
+				h2.title-h2.title-h2--offset.title-h2--margin Основные принципы работы с персоналом
+				.swiper.js-slider-conditions.conditions__slides
+					ul.conditions__list.swiper-wrapper
+						li.conditions__item.swiper-slide
+							p.conditions__title Сбалансированный подход к формированию кадрового состава
+							p.conditions__desc Сотрудники «ИНТЕКО» –вчерашние выпускники вузов, профильные специалисты, зрелые руководители, имеющие многолетний опыт работы в отрасли. Средний возраст сотрудников компании – 39 лет.
+						li.conditions__item.swiper-slide
+							p.conditions__title Объективность оценки и критериев отбора кандидатов
+							p.conditions__desc Кандидаты проходят многоступенчатое интервью по компетенциям: с HR, непосредственным и вышестоящими профильными руководителями. Оценка по формальным профессиональным параметрам обеспечивает ее объективность и возможность сравнения кандидатов по единым критериям. Для оценки кандидатов на некоторые позиции предусмотрено профессиональное тестирование.
+						li.conditions__item.swiper-slide
+							p.conditions__title Приоритет внутренних кандидатов
+							p.conditions__desc Формируя команду, компания сочетает методы внутреннего и внешнего найма, при этом на ряд позиций приоритетно рассматриваются сотрудники компании.
+						li.conditions__item.swiper-slide
+							p.conditions__title Непрерывное развитие персонала
+							p.conditions__desc «ИНТЕКО» стремится к формированию обучающей рабочей среды, в которой новые знания и опыт сотрудники получают естественным путем – в рамках текущей деятельности, в процессах рабочего взаимодействия, через участие в девелоперских и трансформационных проектах. На внутрикорпоративных ресурсах формируется база знаний и инструментарий, с помощью которых сотрудники могут самостоятельно изучать интересующие их темы. В компании есть у кого учиться: представители «ИНТЕКО» являются авторитетными экспертами, чье мнение публикуют РБК, «Коммерсантъ», «Ведомости», ТАСС, «Интерфакс», «Строительная газета» и чьи интервью транслируют Business FM и #[br] РБК-ТВ.
+						li.conditions__item.swiper-slide
+							p.conditions__title Обеспечение достойного уровня жизни сотрудников
+							p.conditions__desc «ИНТЕКО» заботится о сотрудниках и предлагает широкий компенсационный пакет.  Система материальной мотивации состоит из фиксированной (оклад) и переменной (премия) частей и адаптирована под актуальные задачи бизнеса, обеспечивая четкую взаимосвязь между результатами труда каждого отдельного работника, бизнес-результатами компании в целом и вознаграждением. Социальный пакет регулярно пересматривается, подстраиваясь под актуальные запросы сотрудников.
+					.conditions__nav.slider-nav
+						button(type="button" aria-label="Следующий слайд").slider-nav__button.slider-nav__button--next.js-slider-conditions-next
+							+icon("icon-arrow", 22, 6)
+						button(type="button" aria-label="Предыдущий слайд").slider-nav__button.slider-nav__button--prev.js-slider-conditions-prev
+							+icon("icon-arrow", 22, 6)
+
+			section.offers.offers--decor
+				h2.title-h2.title-h2--position Компания предлагает своим сотрудникам
+				.offers__inner.achievement
+					.offers__slides.swiper.js-slider-offers
+						ul.offers__image-list.swiper-wrapper
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-1-desc@1x.webp 1x, img/content/offer-1-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-1-desc@1x.webp 1x, img/content/offer-1-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-1-mobile@1x.jpg, img/content/offer-1-mobile@2x.jpg 2x")
+									img(src="img/content/offer-1-desc@1x.jpg" srcset="img/content/offer-1-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-2-desc@1x.webp 1x, img/content/offer-2-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-2-desc@1x.webp 1x, img/content/offer-2-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-2-mobile@1x.jpg, img/content/offer-2-mobile@2x.jpg 2x")
+									img(src="img/content/offer-2-desc@1x.jpg" srcset="img/content/offer-2-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-3-desc@1x.webp 1x, img/content/offer-3-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-3-desc@1x.webp 1x, img/content/offer-3-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-3-mobile@1x.jpg, img/content/offer-3-mobile@2x.jpg 2x")
+									img(src="img/content/offer-3-desc@1x.jpg" srcset="img/content/offer-3-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-4-desc@1x.webp 1x, img/content/offer-4-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-4-desc@1x.webp 1x, img/content/offer-4-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-4-mobile@1x.jpg, img/content/offer-4-mobile@2x.jpg 2x")
+									img(src="img/content/offer-4-desc@1x.jpg" srcset="img/content/offer-4-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-5-desc@1x.webp 1x, img/content/offer-5-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-5-desc@1x.webp 1x, img/content/offer-5-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-5-mobile@1x.jpg, img/content/offer-5-mobile@2x.jpg 2x")
+									img(src="img/content/offer-5-desc@1x.jpg" srcset="img/content/offer-5-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-6-desc@1x.webp 1x, img/content/offer-6-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-6-desc@1x.webp 1x, img/content/offer-6-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-6-mobile@1x.jpg, img/content/offer-6-mobile@2x.jpg 2x")
+									img(src="img/content/offer-6-desc@1x.jpg" srcset="img/content/offer-6-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-7-desc@1x.webp 1x, img/content/offer-7-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-7-desc@1x.webp 1x, img/content/offer-7-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-7-mobile@1x.jpg, img/content/offer-7-mobile@2x.jpg 2x")
+									img(src="img/content/offer-7-desc@1x.jpg" srcset="img/content/offer-7-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-8-desc@1x.webp 1x, img/content/offer-8-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-8-desc@1x.webp 1x, img/content/offer-8-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-8-mobile@1x.jpg, img/content/offer-8-mobile@2x.jpg 2x")
+									img(src="img/content/offer-8-desc@1x.jpg" srcset="img/content/offer-8-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-9-desc@1x.webp 1x, img/content/offer-9-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-9-desc@1x.webp 1x, img/content/offer-9-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-9-mobile@1x.jpg, img/content/offer-9-mobile@2x.jpg 2x")
+									img(src="img/content/offer-9-desc@1x.jpg" srcset="img/content/offer-9-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-10-desc@1x.webp 1x, img/content/offer-10-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-10-desc@1x.webp 1x, img/content/offer-10-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-10-mobile@1x.jpg, img/content/offer-10-mobile@2x.jpg 2x")
+									img(src="img/content/offer-10-desc@1x.jpg" srcset="img/content/offer-10-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+							li.offers__image-item.swiper-slide
+								picture
+									source(type="image/webp" media="(max-width: 699px)" srcset="img/content/offer-11-desc@1x.webp 1x, img/content/offer-11-mobile@2x.webp 2x")
+									source(type="image/webp" srcset="img/content/offer-11-desc@1x.webp 1x, img/content/offer-11-desc@2x.webp 2x")
+									source(media="(max-width: 699px)" srcset="img/content/offer-11-mobile@1x.jpg, img/content/offer-11-mobile@2x.jpg 2x")
+									img(src="img/content/offer-11-desc@1x.jpg" srcset="img/content/offer-11-desc@2x.jpg 2x" alt="Предложения компании Интеко" loading="lazy" width="800" height="578")
+
+
+						.offer__nav.slider-nav
+							button(type="button" aria-label="Следующий слайд").slider-nav__button.slider-nav__button--next.js-slider-offers-next
+								+icon("icon-arrow", 22, 6)
+							button(type="button" aria-label="Предыдущий слайд").slider-nav__button.slider-nav__button--prev.js-slider-offers-prev
+								+icon("icon-arrow", 22, 6)
+
+					ul.offers__achievement.achievement__list
+						li.achievement__item работу в центре Москвы, в 1 минуте ходьбы от ст. метро «Красные ворота»
+						li.achievement__item полное соблюдение норм трудового законодательства
+						li.achievement__item возможность адаптации графика работы под индивидуальные потребности
+						li.achievement__item возможность удаленного режима работы
+						li.achievement__item своевременную выплату заработной платы
+						li.achievement__item прозрачную систему KPI и премирования по итогам работы за год
+						li.achievement__item корпоративные программы скидок и выгодные предложения от партнеров
+						li.achievement__item материальную поддержку
+						li.achievement__item добровольное медицинское страхование (включая стоматологию, страхование выезжающих за рубеж, а также льготную стоимость страховки для членов семьи сотрудника)
+						li.achievement__item широкие возможности для совместного времяпрепровождения вне работы: спортивные и интеллектуальные игры (в компании есть самообразующиеся группы по футболу, бегу и интеллектуальным викторинам), корпоративные праздники, участие в мероприятиях, проводимых Советом молодых специалистов строительной отрасли г. Москвы, и многое другое.

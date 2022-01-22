@@ -1,0 +1,45 @@
+.title-h2 {
+	font-size: 32px;
+	line-height: 38px;
+	font-weight: bold;
+	color: $color-mariner;
+	margin-top: 0;
+	margin-bottom: 16px;
+
+	@include vp--699 {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+
+	&--offset {
+		padding: 0 60px;
+
+		@include vp--699 {
+			padding: 0 20px;
+		}
+	}
+
+	&--margin {
+		margin-bottom: 52px;
+
+		@include vp--699 {
+			margin-bottom: 26px;
+			margin-right: -3px;
+		}
+	}
+
+	&--position {
+		max-width: 920px;
+		width: 100%;
+		margin-bottom: 52px;
+		margin-left: auto;
+
+		@include vp--699 {
+			min-width: none;
+			width: auto;
+			margin-left: 30px;
+			margin-right: 20px;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin expand-interactive-area($width, $height: $width, $position: relative) {
+  position: $position;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: $width;
+    height: $height;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Desktop first
+
+@mixin vp--1339 {
+  @media (max-width: $vp--1340 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1019 {
+  @media (max-width: $vp--1020 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--699 {
+  @media (max-width: $vp--700 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--329 {
+  @media (max-width: $vp--330 - 1) {
+    @content;
+  }
+}
+
+// $vp--330:                           330px;
+// $vp--700:                           700px;
+// $vp--1020:                          1020px;
+// $vp--1340:                          1340px;

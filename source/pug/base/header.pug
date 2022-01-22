@@ -1,0 +1,11 @@
+include ../mixins/basic/icon
+include ../mixins/basic/picture
+
+mixin header(headerMods, currentPage)
+
+	header.header(class=headerMods)
+		.container
+			.header__content-inner
+				img(src="img/content/logo.svg" alt="Логотип компании Интеко" loading="lazy" width="150" height="40")
+				a(href="#" aria-label="Сменить язык").header__lang-link
+					+icon("icon-lang", 22, 20)

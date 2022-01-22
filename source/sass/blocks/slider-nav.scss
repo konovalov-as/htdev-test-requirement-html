@@ -1,0 +1,32 @@
+.slider-nav {
+	@include vp--699 {
+		display: none;
+	}
+}
+
+.slider-nav__button {
+	display: block;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	line-height: 19px;
+
+	svg {
+		width: 22px;
+		height: 6px;
+		fill: $color-nero;
+	}
+
+	&:hover,
+	&:focus {
+		svg {
+			fill: $color-mariner;
+			transition: fill	$trans--300;
+		}
+	}
+
+	&--prev {
+		transform: rotate(180deg);
+	}
+}

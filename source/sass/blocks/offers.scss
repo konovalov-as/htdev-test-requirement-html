@@ -1,0 +1,109 @@
+.offers {
+	&--offset {
+		margin-bottom: 50px;
+	}
+
+	&--decor {
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: $color-very-light-grey;
+		}
+
+		&::before {
+			top: -42px;
+			left: 0;
+			width: 24%;
+			height: 2px;
+
+			@include vp--699 {
+				width: 4%;
+				top: -22px;
+				left: 0;
+			}
+		}
+
+		&::after {
+			top: -42px;
+			left: 23.9%;
+			width: 2px;
+			height: 200%;
+
+			@include vp--699 {
+				top: -22px;
+				left: 10px;
+			}
+		}
+	}
+}
+
+.offers__inner {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(12, 1fr);
+
+	@include vp--699 {
+		display: block;
+		padding-bottom: 6px;
+	}
+}
+
+.offers__slides {
+	position: relative;
+	width: 100%;
+	grid-row: 1;
+	grid-column: 1 / span 9;
+	margin-top: 49px;
+
+	@include vp--699 {
+		margin-top: 27px;
+	}
+}
+
+.offers__image-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.offers__image-item {
+	img {
+		width: 800px;
+		height: 578px;
+		object-fit: cover;
+
+		@include vp--699 {
+			width: 280px;
+			height: 202px;
+		}
+	}
+}
+
+.offers__achievement {
+	grid-row: 1;
+	grid-column: 8 / span 5;
+	margin-left: 51px;
+	margin-bottom: 50px;
+	padding-top: 45px;
+	padding-bottom: 59px;
+	padding-left: 50px;
+	padding-right: 60px;
+
+	@include vp--699 {
+		margin-top: -40px;
+		margin-left: 20px;
+		padding-top: 28px;
+		padding-bottom: 32px;
+		padding-left: 20px;
+		padding-right: 10px;
+	}
+}
+
+.offer__nav {
+	position: absolute;
+	bottom: 100px;
+	left: 59px;
+}

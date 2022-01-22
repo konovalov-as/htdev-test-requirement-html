@@ -1,0 +1,59 @@
+.header__content-inner {
+	display: flex;
+	position: relative;
+	z-index: 1;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	padding-left: 60px;
+	padding-right: 60px;
+	background-color: $color-default-white;
+
+	img {
+		object-fit: cover;
+		width: 150px;
+		height: 40px;
+
+		@include vp--699 {
+			width: 106px;
+			height: 30px;
+			object-fit: contain;
+		}
+	}
+
+	@include vp--699 {
+		padding-top: 23px;
+		padding-bottom: 30px;
+		padding-left: 19px;
+		padding-right: 19px;
+	}
+}
+
+.header__lang-link {
+	width: 20px;
+	height: 20px;
+
+	svg {
+		width: 22px;
+		height: 20px;
+		fill: $color-nero;
+	}
+
+	&:hover,
+	&:focus {
+		svg {
+			fill: $color-mariner;
+			transition: fill $trans--300;
+		}
+	}
+
+	&:active {
+		opacity: 0.8;
+		transition: opacity $trans--300;
+	}
+
+	@include vp--699 {
+		display: none;
+	}
+}
